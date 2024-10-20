@@ -12,7 +12,6 @@ app.use((request, response, next) => {
   next();
 });
 
-// Routes
 app.use("/api/workouts", workouts);
 
 // Connect to MongoDB
