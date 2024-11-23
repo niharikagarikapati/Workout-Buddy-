@@ -6,7 +6,7 @@ const Home = () => {
   const { workouts, dispatch } = useWorkoutContext(); // Update usage
 
   const fetchWorkouts = async () => {
-    const response = await fetch("https://workout-buddy-sjzc.onrender.com/api/workouts");
+    const response = await fetch("http://localhost:4000/api/workouts");
     const json = await response.json();
     if (response.ok) {
       dispatch({ type: "SET_WORKOUTS", payload: json });
